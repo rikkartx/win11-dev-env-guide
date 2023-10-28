@@ -229,13 +229,19 @@ Thanks to WSLg we can run gui app in wsl2.
     sudo apt install flatpak
     ```
 
-2. Install `org.freedesktop.Platform`
+2. Add remote repository
+
+    ``` bash
+    flatpak remote-add -u --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+    ```
+
+3. Install `org.freedesktop.Platform`
 
     ``` bash
     flatpak install -u org.freedesktop.Platform
     ```
 
-3. Install `Podman Desktop`
+4. Install `Podman Desktop`
 
     [Install Podman Desktop use Flatpak](https://podman-desktop.io/docs/Installation/linux-install/installing-podman-desktop-from-a-flatpak-bundle#procedure)
 
@@ -245,7 +251,7 @@ Thanks to WSLg we can run gui app in wsl2.
     flatpak install -u $where_you_download_file_store
     ```
 
-4. Run `Podman Desktop`
+5. Run `Podman Desktop`
 
     ``` bash
     # Set alias in .zshrc
